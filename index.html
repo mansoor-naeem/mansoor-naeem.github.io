@@ -121,3 +121,4 @@ document.querySelectorAll(".rv").forEach(function(n){io.observe(n)});
 var R=["Software Engineer","Frontend Developer","AI Integration Developer"],i=0,j=0,del=false,t=document.getElementById("role");
 (function k(){var w=R[i];t.textContent=w.slice(0,j);if(!del&&j<w.length){j++;setTimeout(k,90)}else if(!del){del=true;setTimeout(k,1300)}else if(j>0){j--;setTimeout(k,45)}else{del=false;i=(i+1)%R.length;setTimeout(k,300)}})();
 </script></body></html>
+
