@@ -1,124 +1,289 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="utf-8"><title>Mansoor Naeem – Software Engineer | Frontend &amp; AI Integration</title>
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="description" content="Software Engineer specialising in React.js frontends and AI integration.">
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mansoor Naeem | Software Engineer | AI Engineer</title>
+<meta name="description" content="Portfolio of Mansoor Naeem, Software Engineer and AI Engineer.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#0a0f1f;--bg2:#0e1530;--card:#111936;--text:#eaf0ff;--muted:#97a4ca;--a:#5b8cff;--b:#8b5cf6;--line:#202a52;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#f5f7ff;--bg2:#eaefff;--card:#fff;--text:#121838;--muted:#55608a;--line:#dce2f6}}
-*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:70px}
-body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.65;overflow-x:hidden}
-.glow{position:fixed;width:340px;height:340px;border-radius:50%;filter:blur(90px);opacity:.28;z-index:0;background:var(--a);top:-100px;right:-100px;animation:fl 16s ease-in-out infinite}
-@keyframes fl{50%{transform:translate(-60px,80px)}}
-.w{position:relative;z-index:1;max-width:800px;margin:0 auto;padding:0 20px}
-header.nav{position:sticky;top:0;z-index:5;backdrop-filter:blur(12px);background:color-mix(in srgb,var(--bg) 80%,transparent);border-bottom:1px solid var(--line)}
-header.nav .w{display:flex;justify-content:space-between;align-items:center;height:56px}
-.logo{font-weight:800;background:linear-gradient(90deg,var(--a),var(--b));-webkit-background-clip:text;background-clip:text;color:transparent}
-nav a{color:var(--muted);text-decoration:none;font-size:13px;margin-left:14px;transition:.2s}nav a:hover{color:var(--a)}
-.hero{padding:64px 0 40px}
-.pill{display:inline-flex;gap:8px;align-items:center;font-size:12px;padding:6px 12px;border:1px solid var(--line);border-radius:999px;color:var(--muted);animation:up .7s both}
-.dot{width:8px;height:8px;border-radius:50%;background:#22c55e;animation:pulse 2s infinite}
-@keyframes pulse{50%{box-shadow:0 0 0 6px #22c55e33}}
-h1{font-size:clamp(2.3rem,9vw,3.6rem);line-height:1.1;margin:18px 0 8px;animation:up .7s .1s both}
-h1 span{background:linear-gradient(90deg,var(--a),var(--b));-webkit-background-clip:text;background-clip:text;color:transparent}
-.role{font-size:1.1rem;font-weight:600;min-height:1.7em;animation:up .7s .2s both}.role::after{content:"|";animation:bl 1s steps(1) infinite;margin-left:2px}
-@keyframes bl{50%{opacity:0}}@keyframes up{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
-.lead{color:var(--muted);max-width:620px;margin:14px 0 26px;animation:up .7s .3s both}
-.btn{display:inline-block;padding:12px 22px;border-radius:12px;background:linear-gradient(90deg,var(--a),var(--b));color:#fff;text-decoration:none;font-weight:600;margin:0 8px 8px 0;transition:.25s}
-.btn:hover{transform:translateY(-3px);box-shadow:0 10px 28px #5b8cff44}.btn.o{background:none;border:1px solid var(--line);color:var(--text)}
-section{padding:36px 0}
-h2{font-size:1.5rem;margin:0 0 20px}h2::after{content:"";display:block;width:44px;height:3px;border-radius:3px;margin-top:6px;background:linear-gradient(90deg,var(--a),var(--b))}
-.rv{opacity:0;transform:translateY(26px);transition:opacity .7s,transform .7s}.rv.on{opacity:1;transform:none}
-p{margin:0 0 12px}.m{color:var(--muted)}
-.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:18px}
-.st{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;text-align:center}.st b{display:block;font-size:1.5rem;color:var(--a)}.st span{font-size:12px;color:var(--muted)}
-.cards{display:grid;gap:14px}
-.c{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px;transition:.3s}
-.c:hover{transform:translateY(-5px);border-color:var(--a);box-shadow:0 12px 30px #5b8cff24}
-.c h3{margin:0 0 4px;font-size:1.05rem}.c .sub{font-size:12px;color:var(--a);margin-bottom:8px}
-.c ul{margin:0 0 10px;padding-left:18px;color:var(--muted);font-size:.93rem}.c li{margin-bottom:3px}
-.tags{display:flex;flex-wrap:wrap;gap:6px}.tag{font-size:12px;padding:3px 10px;border-radius:999px;border:1px solid var(--line);color:var(--muted)}
-h4{margin:24px 0 10px;color:var(--muted);font-size:.75rem;letter-spacing:.14em;text-transform:uppercase}
-.g{display:grid;grid-template-columns:repeat(auto-fill,minmax(92px,1fr));gap:10px}
-.sk{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 6px 10px;text-align:center;font-size:12px;transition:.3s}
-.sk:hover{transform:translateY(-6px);border-color:var(--a)}.sk svg{width:36px;height:36px;display:block;margin:0 auto 8px;transition:.3s}.sk:hover svg{transform:scale(1.15) rotate(-4deg)}
-.edu{display:flex;gap:14px}.edu .ic{font-size:1.8rem}
-.ct{display:flex;flex-wrap:wrap}
-footer{text-align:center;color:var(--muted);font-size:13px;padding:30px 0 50px;border-top:1px solid var(--line);margin-top:20px}
-@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
-</style></head><body><div class="glow"></div>
-<header class="nav"><div class="w"><span class="logo">MN.</span><nav><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#education">Education</a><a href="#contact">Contact</a></nav></div></header>
-<main class="w">
-<div class="hero">
-<span class="pill"><i class="dot"></i>Open to Software Engineering roles</span>
-<h1>Hi, I’m <span>Mansoor Naeem</span></h1>
-<div class="role" id="role"></div>
-<p class="lead">Software Engineer specialising in React.js frontends and AI integration. I build responsive, component-based interfaces, connect them to Node.js back ends and add LLM-powered features with the OpenAI and Claude APIs.</p>
-<a class="btn" href="#projects">View projects</a><a class="btn o" href="mailto:mansoornaeem14@gmail.com">Contact me</a>
-</div>
+:root{--black:#0b0f0c;--ink:#141a15;--green:#16a34a;--green-lt:#4ade80;--green-dk:#14532d;--white:#fff;--mist:#f3f7f4;--line:#dfe8e2;--muted:#5b675f;--head:'Bricolage Grotesque','Segoe UI',Arial,sans-serif;--body:'Figtree','Segoe UI',Arial,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:64px}
+body{font-family:var(--body);color:var(--ink);background:var(--white);line-height:1.65;font-size:16px}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--green-lt);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+h1,h2,h3{font-family:var(--head);line-height:1.15}
+nav{position:sticky;top:0;z-index:10;background:var(--black);border-bottom:1px solid #1f2b22}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:56px}
+nav .logo{font-family:var(--head);font-weight:700;color:var(--green-lt);text-decoration:none;font-size:20px}
+nav ul{display:flex;gap:18px;list-style:none;overflow-x:auto}
+nav ul a{color:#cfd8d2;text-decoration:none;font-size:14px;white-space:nowrap}
+nav ul a:hover{color:var(--green-lt)}
+.hero{background:var(--black);color:var(--white);padding:84px 0 72px}
+.hero h1{font-size:clamp(40px,8vw,84px);font-weight:700;letter-spacing:-1.5px}
+.hero .role{font-family:var(--head);font-size:clamp(18px,3vw,26px);color:var(--green-lt);margin:10px 0 18px}
+.hero p.lead{max-width:640px;color:#c3cec7;font-size:17px}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.chips a{font-size:14px;text-decoration:none;padding:9px 16px;border-radius:999px;border:1px solid #2f4a37;color:#e6efe9}
+.chips a:hover{border-color:var(--green-lt);color:var(--green-lt)}
+.btn{display:inline-block;margin-top:30px;margin-right:10px;padding:12px 22px;border-radius:8px;font-weight:600;text-decoration:none}
+.btn.fill{background:var(--green);color:var(--white)}
+.btn.fill:hover{background:var(--green-lt);color:var(--black)}
+.btn.line{border:1.5px solid var(--green-lt);color:var(--white)}
+.btn.line:hover{background:var(--green-lt);color:var(--black)}
+section{padding:72px 0}
+section.dark{background:var(--black);color:var(--white)}
+section.mist{background:var(--mist)}
+h2{font-size:clamp(26px,4vw,36px);font-weight:700;margin-bottom:28px;padding-bottom:12px;border-bottom:3px solid var(--green);display:inline-block}
+.dark h2{border-color:var(--green-lt)}
+.about p{max-width:760px;font-size:17px}
+.logos{display:grid;grid-template-columns:repeat(auto-fill,minmax(96px,1fr));gap:12px;margin-bottom:36px}
+.logo-tile{background:var(--white);border-radius:12px;padding:14px 8px;text-align:center;border:1px solid var(--line)}
+.logo-tile img{width:38px;height:38px;object-fit:contain}
+.logo-tile span{display:block;font-size:12px;margin-top:6px;color:var(--muted)}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+.skill{background:var(--white);border:1px solid var(--line);border-left:4px solid var(--green);border-radius:8px;padding:16px 18px}
+.skill h3{font-size:17px;margin-bottom:6px}
+.skill p{font-size:15px;color:var(--muted)}
+.bring{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}
+.bring div{border:1px solid #25402c;border-radius:10px;padding:20px;background:var(--ink)}
+.bring h3{color:var(--green-lt);font-size:18px;margin-bottom:8px}
+.bring p{color:#c3cec7;font-size:15px}
+.proj{background:var(--white);border:1px solid var(--line);border-radius:12px;padding:24px;margin-bottom:18px}
+.proj h3{font-size:21px}
+.tech{color:var(--green);font-style:italic;font-weight:500;margin:4px 0 12px;font-size:15px}
+.proj ul{padding-left:20px}
+.proj li{margin-bottom:6px;font-size:15.5px}
+.proj li::marker{color:var(--green)}
+.edu h3{font-size:21px;margin-bottom:6px}
+.edu p{max-width:760px;color:#c3cec7}
+.edu strong{color:var(--green-lt);font-weight:600}
+.shelf{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:26px 18px}
+.book{text-align:left}
+.cover{aspect-ratio:2/3;border-radius:4px 8px 8px 4px;overflow:hidden;background:var(--black);border-left:6px solid var(--green);display:flex;align-items:flex-end;padding:10px;color:var(--white);font-family:var(--head);font-weight:700;font-size:15px;line-height:1.2;box-shadow:0 10px 18px -8px rgba(0,0,0,.45)}
+.cover img{width:100%;height:100%;object-fit:cover;display:block;margin:-10px;max-width:none}
+.cover.img{padding:0;border-left:0}
+.cover.img img{margin:0}
+.book h3{font-size:15px;margin-top:12px}
+.book p{font-size:13px;color:var(--muted)}
+.book .for{color:var(--green-dk);font-weight:600}
+.contact a.row{display:block;font-size:19px;margin:8px 0;text-decoration:none;color:var(--white)}
+.contact a.row:hover{color:var(--green-lt)}
+.contact small{color:#9fb0a5;display:block;font-size:13px}
+footer{background:#050806;color:#8da095;text-align:center;font-size:13px;padding:22px}
+@media(max-width:640px){nav ul{gap:14px}.hero{padding:56px 0}section{padding:52px 0}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 
-<section id="about"><h2 class="rv">About</h2>
-<p class="m rv">I hold a Bachelor’s degree in Software Engineering from Mirpur University of Science and Technology (MUST), with a solid base in OOP, databases and machine learning. I have freelance experience on Upwork, delivering web work independently from requirements to delivery. I’m looking for a role in a product company where I can ship production code, learn from senior engineers and take real ownership.</p>
-<div class="stats rv"><div class="st"><b>6</b><span>Projects</span></div><div class="st"><b>2</b><span>Certifications</span></div><div class="st"><b>Upwork</b><span>Freelance</span></div></div>
-</section>
+/* Polished motion and interactive details */
+@keyframes riseIn { from { opacity:0; transform:translateY(22px) } to { opacity:1; transform:translateY(0) } }
+@keyframes softGlow { 0%,100% { box-shadow:0 0 0 rgba(74,222,128,0) } 50% { box-shadow:0 0 24px rgba(74,222,128,.12) } }
+.hero .wrap { animation:riseIn .8s ease both }
+.logo-tile, .skill, .proj, .bring > div, .book { transition:transform .25s ease, box-shadow .25s ease, border-color .25s ease }
+.logo-tile:hover, .skill:hover, .proj:hover, .bring > div:hover { transform:translateY(-4px); box-shadow:0 12px 28px rgba(0,0,0,.09); border-color:var(--green-lt) }
+.book { cursor:pointer; border-radius:10px; padding:8px; }
+.book:hover { transform:translateY(-7px); background:var(--mist) }
+.book:focus-visible { outline:3px solid var(--green); outline-offset:3px }
+.cover { position:relative; transition:transform .25s ease, box-shadow .25s ease }
+.book:hover .cover { transform:rotate(-1deg) scale(1.025); box-shadow:0 16px 26px -8px rgba(0,0,0,.35) }
+.cover.fallback { align-items:center; justify-content:center; text-align:center; padding:16px; background:linear-gradient(145deg,#102016,#14532d 65%,#16a34a) }
+.skill-logo { width:38px; height:38px; object-fit:contain; display:block; margin:0 auto 6px }
+.contact-links { display:flex; flex-wrap:wrap; gap:12px; margin-top:18px }
+.contact-icon-link { display:flex!important; align-items:center; gap:10px; border:1px solid #294333; border-radius:10px; padding:10px 14px; font-size:15px!important; transition:background .2s ease, transform .2s ease }
+.contact-icon-link:hover { background:#14251a; transform:translateY(-3px) }
+.contact-icon-link img { width:24px; height:24px; object-fit:contain; background:#fff; border-radius:5px; padding:2px }
+.book-modal { position:fixed; inset:0; z-index:100; display:none; align-items:center; justify-content:center; padding:20px; background:rgba(3,8,5,.78); backdrop-filter:blur(5px) }
+.book-modal.open { display:flex; animation:riseIn .2s ease both }
+.book-dialog { width:min(680px,100%); max-height:88vh; overflow:auto; position:relative; display:grid; grid-template-columns:minmax(130px,210px) 1fr; gap:24px; padding:26px; border-radius:16px; background:#fff; color:var(--ink); box-shadow:0 24px 80px rgba(0,0,0,.35) }
+.book-dialog .modal-cover { width:100%; aspect-ratio:2/3; object-fit:cover; border-radius:5px 9px 9px 5px; box-shadow:0 12px 22px rgba(0,0,0,.2) }
+.book-dialog h3 { font-size:23px; margin:18px 32px 8px 0 }
+.book-dialog p { color:var(--muted); margin:8px 0 }
+.book-dialog .modal-close { position:absolute; top:12px; right:14px; border:0; background:var(--mist); border-radius:50%; width:36px; height:36px; font-size:22px; cursor:pointer }
+.book-dialog .btn { margin-top:14px }
+.reveal { opacity:0; transform:translateY(18px); transition:opacity .65s ease, transform .65s ease }
+.reveal.visible { opacity:1; transform:translateY(0) }
+@media(max-width:520px) { .book-dialog { grid-template-columns:105px 1fr; gap:15px; padding:18px } .book-dialog h3 {font-size:18px} .book-dialog .btn {padding:9px 12px;font-size:13px} }
+@media(prefers-reduced-motion:reduce) { *,*::before,*::after {animation-duration:.01ms!important; animation-iteration-count:1!important; transition-duration:.01ms!important; scroll-behavior:auto!important} .reveal {opacity:1;transform:none} }
 
-<section id="skills"><h2 class="rv">Technical Skills</h2>
-<h4 class="rv">Frontend</h4><div class="g rv" data-k="HTML5,CSS3,JavaScript,React"></div>
-<h4 class="rv">Backend &amp; Cloud</h4><div class="g rv" data-k=".NET,Node.js,Express,Firebase,SQL,Postman"></div>
-<h4 class="rv">Languages</h4><div class="g rv" data-k="Python,Java,C#"></div>
-<h4 class="rv">AI &amp; ML</h4><div class="g rv" data-k="OpenAI,Claude,Prompting"></div>
-<h4 class="rv">Tools &amp; Platforms</h4><div class="g rv" data-k="Git,GitHub,VS Code,Visual Studio,npm,WordPress"></div>
-<p class="m rv" style="margin-top:18px;font-size:.9rem">Also: Machine Learning (KNN, Naive Bayes, text classification), REST APIs, authentication, UML, IEEE-format technical writing. Certified in Google Data Analytics and IBM Python.</p>
-</section>
+</style>
+</head>
+<body>
+<nav><div class="wrap"><a class="logo" href="#top">MN</a>
+<ul><li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li><li><a href="#team">Strengths</a></li><li><a href="#projects">Projects</a></li><li><a href="#education">Education</a></li><li><a href="#books">Books</a></li><li><a href="#contact">Contact</a></li></ul></div></nav>
 
-<section id="projects"><h2 class="rv">Projects</h2><div class="cards">
-<div class="c rv"><h3>Fake News Detection System</h3><div class="sub">Final Year Project</div><ul><li>Built a system that classifies news content as real or fake using machine learning and text processing.</li><li>Handled dataset preparation, preprocessing, model training and evaluation.</li></ul><div class="tags"><span class="tag">Python</span><span class="tag">Machine Learning</span><span class="tag">NLP</span></div></div>
-<div class="c rv"><h3>Smart Irrigation System Dashboard</h3><div class="sub">IoT · Dashboard</div><ul><li>Designed automated irrigation with sensor-based logic and scheduling.</li><li>Built a dashboard combining sensor readings with weather API data to guide watering decisions, documented in an IEEE-format paper.</li></ul><div class="tags"><span class="tag">IoT</span><span class="tag">Weather APIs</span><span class="tag">Dashboard UI</span></div></div>
-<div class="c rv"><h3>ML Classification Pipeline – Titanic</h3><div class="sub">Machine Learning</div><ul><li>Built and tuned KNN and Gaussian Naive Bayes classifiers for survival prediction.</li><li>Feature extraction, hyperparameter optimisation, evaluation and a full technical report.</li></ul><div class="tags"><span class="tag">Python</span><span class="tag">KNN</span><span class="tag">Naive Bayes</span></div></div>
-<div class="c rv"><h3>Library Management System</h3><div class="sub">Object-Oriented Design</div><ul><li>Created complete UML diagrams (use case, class, sequence).</li><li>Implemented core features in Java using OOP principles.</li></ul><div class="tags"><span class="tag">Java</span><span class="tag">UML</span><span class="tag">OOP</span></div></div>
-<div class="c rv"><h3>Green Computing Research Paper</h3><div class="sub">Research</div><ul><li>Researched energy-efficient computing practices and published the findings as an IEEE-format paper.</li></ul><div class="tags"><span class="tag">Research</span><span class="tag">IEEE</span></div></div>
-<div class="c rv"><h3>Puzzle Game</h3><div class="sub">My first complete project</div><ul><li>Built an interactive puzzle game in C#, the start of my engineering path.</li></ul><div class="tags"><span class="tag">C#</span></div></div>
+<header class="hero" id="top"><div class="wrap">
+<h1>Mansoor Naeem</h1>
+<p class="role">Software Engineer | AI Engineer</p>
+<p class="lead">Software Engineer specialising in Software Development and AI Engineering, based in Lahore / Mirpur AJ&amp;K, Pakistan.</p>
+<a class="btn fill" href="#projects">View projects</a><a class="btn line" href="#contact">Contact me</a>
+</div></header>
+
+<section id="about" class="about"><div class="wrap"><h2>Professional Summary</h2>
+<p>Software Engineer with a Bachelor's degree in Software Engineering from Mirpur University of Science and Technology (MUST), specialising in Software Development and AI Engineering. I build responsive, component-based interfaces, connect them to Node.js/Express back ends and REST APIs, and add LLM-powered features using the OpenAI and Claude APIs. I have a solid base in OOP, Data structure, databases and machine learning, and freelance experience delivering web work independently. I am looking for a software engineering role in a product company where I can ship production code, work with senior engineers and take real ownership.</p>
 </div></section>
 
-<section id="education"><h2 class="rv">Education</h2>
-<div class="c edu rv"><div class="ic">🎓</div><div><h3>Bachelor of Software Engineering (BSE)</h3><div class="sub">Mirpur University of Science and Technology (MUST), Mirpur AJ&amp;K</div><p class="m" style="font-size:.93rem;margin:0">Software Construction &amp; Development, Machine Learning, Database Engineering, Web Technologies, OOP. Active in software project development and academic research writing.</p></div></div>
-</section>
+<section id="skills" class="mist"><div class="wrap"><h2>Technical Skills</h2>
+<div class="logos" id="logos"></div>
+<div class="skills">
+<div class="skill"><h3>Frontend Development</h3><p>React.js, JavaScript (ES6+), HTML5, CSS3, Responsive Web Design</p></div>
+<div class="skill"><h3>Backend Development</h3><p>Node.js, Express.js, RESTful APIs, Authentication, API Integration, Python FastAPI</p></div>
+<div class="skill"><h3>Databases &amp; Cloud</h3><p>SQL, PostgreSQL, MySQL, Firebase (Firestore, Authentication, Hosting), NoSQL, Cloud Deployment</p></div>
+<div class="skill"><h3>AI &amp; Machine Learning</h3><p>LLM Integration (OpenAI, Claude APIs), Prompt Engineering, Retrieval-Augmented Generation (RAG), Machine Learning, Text Classification, Scikit-learn, Pandas, NumPy</p></div>
+<div class="skill"><h3>Programming Languages</h3><p>JavaScript, Python, C#, C++</p></div>
+<div class="skill"><h3>Tools &amp; Technologies</h3><p>Git, GitHub, VS Code, Visual Studio, .NET, npm, Postman, Docker, Linux</p></div>
+<div class="skill"><h3>Software Engineering</h3><p>Object-Oriented Programming, Data Structures &amp; Algorithms, UML, Software Design, Technical Documentation, IEEE-Format Writing</p></div>
+<div class="skill"><h3>Professional Skills</h3><p>Problem Solving, Team Collaboration, Adaptability, Independent Project Ownership</p></div>
+</div></div></section>
 
-<section id="contact"><h2 class="rv">Let’s work together</h2>
-<p class="m rv">Open to software engineering roles and freelance projects. Based in Lahore / Mirpur AJ&amp;K, Pakistan.</p>
-<div class="ct rv"><a class="btn" href="mailto:mansoornaeem14@gmail.com">Email me</a><a class="btn o" href="https://linkedin.com/in/mansoor-naeem" target="_blank" rel="noopener">LinkedIn</a><a class="btn o" href="https://github.com/mansoor-naeem" target="_blank" rel="noopener">GitHub</a></div>
-</section></main>
-<footer>© 2026 Mansoor Naeem</footer>
+<section id="team" class="dark"><div class="wrap"><h2>What I Bring to the Team</h2>
+<div class="bring">
+<div><h3>Software Development</h3><p>Ability to build responsive, component-based React.js interfaces and develop backend services using Node.js, Express.js, and REST APIs.</p></div>
+<div><h3>AI Engineering</h3><p>Practical experience integrating OpenAI and Claude APIs, designing effective prompts, and developing LLM-powered application features.</p></div>
+<div><h3>Full-Stack Development</h3><p>Understanding of frontend and backend architecture, database integration, API development, and Git-based workflows.</p></div>
+<div><h3>Data &amp; Machine Learning</h3><p>Foundational knowledge of machine learning, model evaluation, text classification, and data analysis, supported by Google Data Analytics and IBM Python certifications.</p></div>
+<div><h3>Technical Communication</h3><p>Ability to document software systems, create UML diagrams, and prepare technical reports and IEEE-format research papers.</p></div>
+<div><h3>Project Ownership</h3><p>Freelance experience working independently with clients on Upwork, managing project requirements, implementing solutions, and delivering completed work.</p></div>
+</div></div></section>
+
+<section id="projects" class="mist"><div class="wrap"><h2>Projects</h2>
+<article class="proj"><h3>Fake News Detection System (Final Year Project)</h3><p class="tech">Python, Machine Learning, NLP, Text Classification</p><ul>
+<li>Designed and built a system that classifies news content as real or fake using machine learning and text-processing techniques.</li>
+<li>Handled dataset preparation, text preprocessing, model training and evaluation of classification performance.</li>
+<li>Documented the full system design, methodology and results as my Bachelor's final-year project.</li></ul></article>
+<article class="proj"><h3>Smart Irrigation System Dashboard</h3><p class="tech">IoT, Weather APIs, Dashboard UI</p><ul>
+<li>Designed an automated irrigation system with sensor-based logic and scheduling.</li>
+<li>Built a dashboard combining sensor readings with weather API data to support watering decisions.</li>
+<li>Documented system design and outcomes in a full IEEE-format academic paper.</li></ul></article>
+<article class="proj"><h3>Machine Learning Classification Pipeline - Titanic Dataset</h3><p class="tech">Python, KNN, Gaussian Naive Bayes, Hyperparameter Tuning</p><ul>
+<li>Built and tuned KNN and Gaussian Naive Bayes classifiers for survival prediction.</li>
+<li>Performed feature extraction, hyperparameter optimisation and model evaluation.</li>
+<li>Authored a full technical report analysing model performance and decision boundaries.</li></ul></article>
+<article class="proj"><h3>Green Computing Research Paper</h3><p class="tech">Research, IEEE Format</p><ul>
+<li>Researched energy-efficient computing practices and wrote up the findings as an IEEE-format paper.</li></ul></article>
+<article class="proj"><h3>Library Management System</h3><p class="tech">Java, UML, Object-Oriented Design</p><ul>
+<li>Developed complete UML diagrams (use case, class, sequence) for the system.</li>
+<li>Implemented core features in Java using OOP principles.</li></ul></article>
+<article class="proj"><h3>Puzzle Game</h3><p class="tech">C#</p><ul>
+<li>Built an interactive puzzle game in C#, my first complete project and the start of my engineering path.</li></ul></article>
+</div></section>
+
+<section id="education" class="dark edu"><div class="wrap"><h2>Education</h2>
+<h3>Bachelor of Software Engineering (BSE)</h3>
+<p>Mirpur University of Science and Technology (MUST), Mirpur AJ&amp;K</p>
+<p style="margin-top:12px"><strong>Relevant coursework:</strong> Software Construction &amp; Development, Machine Learning, Database Engineering, Web Technologies, OOP, Data Science, AI, Cloud Computing, Computer Networks, Operating Systems, Information Security</p>
+</div></section>
+
+<section id="books"><div class="wrap"><h2>Books Behind My Coursework</h2>
+<div class="shelf" id="shelf"></div></div></section>
+
+<section id="contact" class="dark contact"><div class="wrap"><h2>Contact</h2>
+ <p style="color:#c3cec7;max-width:620px;margin-bottom:18px">Have a project, opportunity, or question? Feel free to get in touch.</p>
+ <div class="contact-links">
+  <a class="row contact-icon-link" href="tel:+923428418709"><img src="https://cdn.simpleicons.org/whatsapp/25D366" alt="WhatsApp logo"><span>+92-342-8418709</span></a>
+  <a class="row contact-icon-link" href="https://www.linkedin.com/in/mansoor-naeem-8709a2260/" target="_blank" rel="noopener"><img src="https://cdn.simpleicons.org/linkedin/0A66C2" alt="LinkedIn logo"><span>LinkedIn</span></a>
+  <a class="row contact-icon-link" href="mailto:mansoornaeem14@gmail.com"><img src="https://cdn.simpleicons.org/gmail/EA4335" alt="Gmail logo"><span>mansoornaeem14@gmail.com</span></a>
+ </div>
+ <a class="row" href="#top" style="margin-top:20px"><small>Location</small>Lahore / Mirpur AJ&amp;K, Pakistan</a>
+ </div></section>
+
+<section class="mist" id="languages"><div class="wrap"><h2>Languages</h2>
+<div class="skills"><div class="skill"><h3>English</h3></div><div class="skill"><h3>Urdu</h3></div></div></div></section>
+
+<footer>&copy; <span id="yr"></span> Mansoor Naeem</footer>
+
 <script>
-var T=function(c,t){return '<text x="12" y="16" text-anchor="middle" font-family="Arial" font-weight="800" font-size="'+(t||9)+'" fill="'+c+'">'};
-var sh='<path d="M3 2l1.7 19L12 23l7.3-2L21 2z" fill="';
-var I={
-HTML5:sh+'#E44D26"/><path d="M12 4v17.2l5.8-1.6L19.2 4z" fill="#F16529"/><path d="M7.5 7.5h9l-.2 2H9.6l.2 2h6.3l-.5 5-3.6 1-3.6-1-.2-2.4h2l.1 1.2 1.7.5 1.7-.5.2-2H7.9z" fill="#fff"/>',
-CSS3:sh+'#1572B6"/><path d="M12 4v17.2l5.8-1.6L19.2 4z" fill="#33A9DC"/><path d="M7.5 7.5h9l-.2 2H9.6l.2 2h6.3l-.5 5-3.6 1-3.6-1-.2-2.4h2l.1 1.2 1.7.5 1.7-.5.2-2H7.9z" fill="#fff"/>',
-JavaScript:'<rect x="2" y="2" width="20" height="20" rx="2" fill="#F7DF1E"/>'+T('#000',9)+'JS</text>',
-React:'<g fill="none" stroke="#61DAFB" stroke-width="1.2"><ellipse cx="12" cy="12" rx="10" ry="4"/><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(60 12 12)"/><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(120 12 12)"/></g><circle cx="12" cy="12" r="1.8" fill="#61DAFB"/>',
-'Node.js':'<path d="M12 1.5l9 5.2v10.6l-9 5.2-9-5.2V6.7z" fill="#339933"/>'+T('#fff',10)+'JS</text>',
-Express:'<rect x="2" y="4" width="20" height="16" rx="3" fill="#888"/><text x="12" y="16" text-anchor="middle" font-family="Arial" font-weight="700" font-size="10" fill="#fff">ex</text>',
-Firebase:'<path d="M4.5 17.5L6.8 2.8c.1-.4.6-.5.8-.1l2.4 4.4zM19.5 17.5l-2.2-12c-.1-.4-.6-.4-.8-.1L4.5 17.5l6.8 4c.4.2.9.2 1.4 0z" fill="#FFA000"/><path d="M4.5 17.5L12 9.3l-2-3.6z" fill="#F57C00"/><path d="M4.5 17.5l6.8 4c.4.2.9.2 1.4 0l6.8-4L12 9.3z" fill="#FFCA28"/>',
-SQL:'<g fill="#336791"><ellipse cx="12" cy="5.5" rx="8" ry="3"/><path d="M4 8c0 1.7 3.6 3 8 3s8-1.3 8-3v4c0 1.7-3.6 3-8 3s-8-1.3-8-3zM4 14.5c0 1.7 3.6 3 8 3s8-1.3 8-3v4c0 1.7-3.6 3-8 3s-8-1.3-8-3z"/></g>',
-Postman:'<circle cx="12" cy="12" r="10" fill="#FF6C37"/><path d="M8 16l7-7M11 8h5v5" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round"/>',
-Python:'<path d="M12 2C8 2 8 3.7 8 3.7V6h4v1H6.2S3 6.6 3 12s2.8 5 2.8 5H8v-2.6s-.1-2.8 2.8-2.8h4.4s2.6.1 2.6-2.5V4.8S18.4 2 12 2z" fill="#3776AB"/><path d="M12 22c4 0 4-1.7 4-1.7V18h-4v-1h5.8s3.2.4 3.2-5-2.8-5-2.8-5H16v2.6s.1 2.8-2.8 2.8H8.8S6.2 12.3 6.2 15v4.2S5.6 22 12 22z" fill="#FFD43B"/><circle cx="9.5" cy="4.6" r=".9" fill="#fff"/><circle cx="14.5" cy="19.4" r=".9" fill="#fff"/>',
-Java:'<path d="M5 14h11v2.5a4 4 0 0 1-4 4H9a4 4 0 0 1-4-4z" fill="#E76F00"/><path d="M16 15h1.5a2 2 0 0 1 0 4H16" fill="none" stroke="#E76F00" stroke-width="1.5"/><path d="M9 11c-1.5-2 1.5-3 0-5M13 11c-1.5-2 1.5-3 0-5" stroke="#5382A1" stroke-width="1.5" fill="none" stroke-linecap="round"/><path d="M4 22h13" stroke="#5382A1" stroke-width="1.6" stroke-linecap="round"/>',
-'C#':'<path d="M12 1.5l9 5.2v10.6l-9 5.2-9-5.2V6.7z" fill="#68217A"/>'+T('#fff',8)+'C#</text>',
-'.NET':'<rect x="1.5" y="4" width="21" height="16" rx="3" fill="#512BD4"/><text x="12" y="15.500" text-anchor="middle" font-family="Arial" font-weight="800" font-size="8" fill="#fff">.NET</text>',
-'Visual Studio':'<path d="M17 2l5 2.4v15.2L17 22 7 13l-4 3-1-1V9l1-1 4 3z" fill="#5C2D91"/><path d="M17 6.500v11L10.500 12z" fill="#fff" opacity=".9"/>',
-OpenAI:'<circle cx="12" cy="12" r="11" fill="#10A37F"/><g fill="none" stroke="#fff" stroke-width="1.5"><path d="M12 5.5l5.6 3.2v6.6L12 18.5l-5.6-3.2V8.7z"/><path d="M12 5.5v5.2l5.6 4.6M12 10.7L6.4 15.3M17.6 8.7L12 12"/></g>',
-Claude:'<g stroke="#D97757" stroke-width="2.2" stroke-linecap="round"><path d="M12 2v20M2 12h20M5 5l14 14M19 5L5 19"/><path d="M8 3l8 18M16 3L8 21M3 8l18 8M3 16l18-8" stroke-width="1.6"/></g>',
-Prompting:'<rect x="2" y="3" width="20" height="18" rx="3" fill="#8B5CF6"/><path d="M6 9l3 3-3 3M11 16h6" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>',
-Git:'<path d="M22.4 11L13 1.6a1.4 1.4 0 0 0-2 0L9 3.6l2.5 2.5a1.7 1.7 0 0 1 2.1 2.1l2.4 2.4a1.7 1.7 0 1 1-1 1l-2.2-2.2v5.800a1.7 1.700 0 1 1-1.400-.1V9.200a1.700 1.700 0 0 1-.9-2.200L8.300 4.400 1.600 11a1.400 1.400 0 0 0 0 2l9.400 9.400a1.400 1.400 0 0 0 2 0l9.400-9.400a1.400 1.400 0 0 0 0-2z" fill="#F05032"/>',
-GitHub:'<path fill="currentColor" d="M12 .3C5.4.3 0 5.700 0 12.300c0 5.300 3.400 9.800 8.200 11.400.6.100.8-.3.8-.6v-2c-3.300.7-4-1.600-4-1.600-.6-1.400-1.400-1.800-1.400-1.800-1.100-.7.100-.7.100-.7 1.200.1 1.800 1.200 1.800 1.200 1.100 1.800 2.800 1.300 3.500 1 .1-.8.4-1.300.8-1.600-2.700-.3-5.500-1.300-5.500-5.900 0-1.300.5-2.400 1.200-3.200-.1-.3-.5-1.500.1-3.200 0 0 1-.3 3.300 1.200a11.500 11.500 0 0 1 6 0c2.300-1.500 3.300-1.200 3.300-1.200.7 1.700.2 2.900.1 3.200.8.800 1.200 1.900 1.200 3.200 0 4.600-2.800 5.600-5.500 5.900.4.400.8 1.100.8 2.200v3.300c0 .3.2.7.8.6A12 12 0 0 0 24 12.300C24 5.700 18.600.3 12 .3"/>',
-'VS Code':'<path d="M17 2l5 2.400v15.200L17 22 7 13l-4 3-1-1V9l1-1 4 3z" fill="#007ACC"/><path d="M17 2v20L7 13z" fill="#1F9CF0"/>',
-npm:'<rect x="1" y="7" width="22" height="10" fill="#CB3837"/><path d="M4 15V9h6v6H8v-4H6v4zM12 9h6v6h-2v-4h-2v4h-2z" fill="#fff"/>',
-WordPress:'<circle cx="12" cy="12" r="10.5" fill="none" stroke="#21759B" stroke-width="1.6"/>'+T('#21759B',13)+'W</text>'
-};
-document.querySelectorAll(".g").forEach(function(g){g.dataset.k.split(",").forEach(function(k){var d=document.createElement("div");d.className="sk";d.innerHTML='<svg viewBox="0 0 24 24" aria-hidden="true">'+I[k]+'</svg>'+k;g.appendChild(d)})});
-var io=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.classList.add("on");io.unobserve(x.target)}})},{threshold:.1});
-document.querySelectorAll(".rv").forEach(function(n){io.observe(n)});
-var R=["Software Engineer","Frontend Developer","AI Integration Developer"],i=0,j=0,del=false,t=document.getElementById("role");
-(function k(){var w=R[i];t.textContent=w.slice(0,j);if(!del&&j<w.length){j++;setTimeout(k,90)}else if(!del){del=true;setTimeout(k,1300)}else if(j>0){j--;setTimeout(k,45)}else{del=false;i=(i+1)%R.length;setTimeout(k,300)}})();
-</script></body></html>
+const D = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/";
+const logos = [
+ ["React","react/react-original"],["JavaScript","javascript/javascript-original"],["HTML5","html5/html5-original"],["CSS3","css3/css3-original"],
+ ["Node.js","nodejs/nodejs-original"],["Express.js","express/express-original"],["Python","python/python-original"],["FastAPI","fastapi/fastapi-original"],
+ ["PostgreSQL","postgresql/postgresql-original"],["MySQL","mysql/mysql-original"],["Firebase","firebase/firebase-original"],["Pandas","pandas/pandas-original"],
+ ["NumPy","numpy/numpy-original"],["Scikit-learn"," scikitlearn/scikitlearn-original".trim()],["C#","csharp/csharp-original"],["C++","cplusplus/cplusplus-original"],
+ [".NET","dotnetcore/dotnetcore-original"],["Java","java/java-original"],["Git","git/git-original"],["GitHub","github/github-original"],
+ ["npm","npm/npm-original-wordmark"],["Postman","postman/postman-original"],["Docker","docker/docker-original"],["Linux","linux/linux-original"],["VS Code","vscode/vscode-original"]
+];
+const logoGrid = document.getElementById("logos");
+logos.forEach(([name,path]) => {
+ const tile = document.createElement("div"); tile.className = "logo-tile";
+ const img = document.createElement("img"); img.className = "skill-logo"; img.src = D + path + ".svg";
+ img.alt = name + " logo"; img.loading = "lazy";
+ img.onerror = () => { img.src = "https://cdn.simpleicons.org/" + ({
+  "React":"react","JavaScript":"javascript","HTML5":"html5","CSS3":"css3","Node.js":"nodedotjs","Express.js":"express",
+  "Python":"python","PostgreSQL":"postgresql","MySQL":"mysql","Firebase":"firebase","Pandas":"pandas","NumPy":"numpy",
+  "Scikit-learn":"scikitlearn","C#":"csharp","C++":"cplusplus",".NET":"dotnet","Java":"java","Git":"git","GitHub":"github",
+  "npm":"npm","Postman":"postman","Docker":"docker","Linux":"linux","VS Code":"visualstudiocode","FastAPI":"fastapi"
+ }[name] || "code")};
+ const label = document.createElement("span"); label.textContent = name;
+ tile.append(img,label); logoGrid.appendChild(tile);
+});
 
+const books = [
+ ["Hands-On Machine Learning with Scikit-Learn, Keras and TensorFlow","Aurélien Géron","Machine Learning","9781492032649"],
+ ["Artificial Intelligence: A Modern Approach","Stuart Russell and Peter Norvig","Artificial Intelligence","9780136042594"],
+ ["Python Data Science Handbook","Jake VanderPlas","Data Science","9781491912058"],
+ ["Clean Code","Robert C. Martin","Software Construction","9780132350884"],
+ ["Designing Data-Intensive Applications","Martin Kleppmann","Database Engineering","9781449373320"],
+ ["Eloquent JavaScript","Marijn Haverbeke","Web Technologies","9781593279509"],
+ ["Computer Networking: A Top-Down Approach","James Kurose and Keith Ross","Computer Networks","9780133594140"],
+ ["Operating System Concepts","Abraham Silberschatz, Peter B. Galvin and Greg Gagne","Operating Systems","9781118063330"],
+ ["Security Engineering","Ross Anderson","Information Security","9780470068526"],
+ ["Introduction to Algorithms","Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest and Clifford Stein","Data Structures & Algorithms","9780262033848"]
+];
+
+const shelf = document.getElementById("shelf");
+const modal = document.createElement("div");
+modal.className = "book-modal";
+modal.id = "bookModal";
+modal.setAttribute("role","dialog");
+modal.setAttribute("aria-modal","true");
+modal.setAttribute("aria-labelledby","modalBookTitle");
+modal.innerHTML = `<div class="book-dialog"><button class="modal-close" aria-label="Close book details">&times;</button><img class="modal-cover" alt=""><div class="modal-info"><h3 id="modalBookTitle"></h3><p class="modal-author"></p><p class="modal-course"></p><p class="modal-isbn"></p><a class="btn fill modal-open-link" target="_blank" rel="noopener">Open book page</a></div></div>`;
+document.body.appendChild(modal);
+
+function openBook(book, coverUrl) {
+ modal.querySelector(".modal-cover").src = coverUrl;
+ modal.querySelector(".modal-cover").alt = "Cover of " + book[0];
+ modal.querySelector("#modalBookTitle").textContent = book[0];
+ modal.querySelector(".modal-author").textContent = "Author: " + book[1];
+ modal.querySelector(".modal-course").textContent = "Related subject: " + book[2];
+ modal.querySelector(".modal-isbn").textContent = "ISBN: " + book[3];
+ modal.querySelector(".modal-open-link").href = "https://openlibrary.org/isbn/" + book[3];
+ modal.classList.add("open");
+ modal.querySelector(".modal-close").focus();
+ document.body.style.overflow = "hidden";
+}
+function closeBook() { modal.classList.remove("open"); document.body.style.overflow = ""; }
+
+modal.querySelector(".modal-close").addEventListener("click",closeBook);
+modal.addEventListener("click",e => { if(e.target === modal) closeBook(); });
+document.addEventListener("keydown",e => { if(e.key === "Escape" && modal.classList.contains("open")) closeBook(); });
+
+books.forEach(book => {
+ const card = document.createElement("article"); card.className = "book reveal";
+ card.tabIndex = 0; card.setAttribute("role","button");
+ card.setAttribute("aria-label","Open details for " + book[0]);
+ const cover = document.createElement("div"); cover.className = "cover fallback"; cover.textContent = book[0];
+ const image = new Image(); image.alt = "Cover of " + book[0]; image.loading = "lazy";
+ image.onload = () => { if(image.naturalWidth > 20) { cover.textContent = ""; cover.className = "cover img"; cover.appendChild(image); } };
+ image.onerror = () => { cover.classList.add("fallback"); };
+ image.src = "https://covers.openlibrary.org/b/isbn/" + book[3] + "-L.jpg?default=false";
+ const title = document.createElement("h3"); title.textContent = book[0];
+ const author = document.createElement("p"); author.textContent = book[1];
+ const course = document.createElement("p"); course.className = "for"; course.textContent = "Course: " + book[2];
+ card.append(cover,title,author,course);
+ card.addEventListener("click",() => openBook(book,image.src));
+ card.addEventListener("keydown",e => { if(e.key === "Enter" || e.key === " ") { e.preventDefault(); openBook(book,image.src); } });
+ shelf.appendChild(card);
+});
+
+const observer = ("IntersectionObserver" in window) ? new IntersectionObserver(entries => entries.forEach(entry => {
+ if(entry.isIntersecting) { entry.target.classList.add("visible"); observer.unobserve(entry.target); }
+}), {threshold:.12}) : null;
+document.querySelectorAll(".skill,.proj,.bring > div,.book").forEach(el => { el.classList.add("reveal"); if(observer) observer.observe(el); else el.classList.add("visible"); });
+
+document.getElementById("yr").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
