@@ -271,7 +271,7 @@ books.forEach(book => {
  card.tabIndex = 0; card.setAttribute("role","button");
  card.setAttribute("aria-label","Open details for " + book[0]);
  const cover = document.createElement("div"); cover.className = "cover fallback"; cover.textContent = book[0];
- const image = new Image(); image.alt = "Cover of " + book[0]; image.loading = "lazy";
+ const image = new Image(); image.alt = "Cover of " + book[0];
  image.onload = () => { if(image.naturalWidth > 20) { cover.textContent = ""; cover.className = "cover img"; cover.appendChild(image); } };
  image.onerror = () => { cover.classList.add("fallback"); };
  image.src = "https://covers.openlibrary.org/b/isbn/" + book[3] + "-L.jpg?default=false";
